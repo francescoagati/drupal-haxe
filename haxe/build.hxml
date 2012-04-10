@@ -1,0 +1,4 @@
+-main DrupalDispatcher
+-php www
+-resource views/user.tpl@user
+-resource views/users.tpl@users

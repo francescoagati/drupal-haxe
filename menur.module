@@ -1,0 +1,17 @@
+<?
+
+function menur_menu() {
+    $items['haxe'] = array(
+      'page callback' => 'mymodule_abc_view',
+      'access arguments' => array('access content'), 
+    );
+    return $items;
+  }
+
+  function mymodule_abc_view($ghi = 0, $jkl = '') {
+      	
+  	require_once dirname(__FILE__).'/haxe/www/lib/php/Boot.class.php';
+	$dp=new DrupalDispatcher('haxe');
+	return $dp->getOutput();
+	
+  }
