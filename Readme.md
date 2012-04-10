@@ -3,16 +3,15 @@ An example of use of haxe with Drupal.
 With an hook menu that call an instance of DrupalDispatcher
 
 
-
 	function menur_menu() {
 	  $items['haxe'] = array(
-	    'page callback' => 'mymodule_abc_view',
+	    'page callback' => 'menur_haxe_router',
 	    'access arguments' => array('access content'), 
 	  );
 	  return $items;
 	}
 
-	function mymodule_abc_view($ghi = 0, $jkl = '') {
+	function menur_haxe_router() {
       	
 	  require_once dirname(__FILE__).'/haxe/www/lib/php/Boot.class.php';
 		$dp=new DrupalDispatcher('haxe');
