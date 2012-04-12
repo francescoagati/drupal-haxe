@@ -1,4 +1,6 @@
--main DrupalDispatcher
+-main drupal.dispatcher.TestDispatcher
 -php www
+-cmd php www/index.php
 -resource views/user.tpl@user
 -resource views/users.tpl@users
+-xml uml.xml
