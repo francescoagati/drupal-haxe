@@ -1,7 +1,6 @@
 An example of use of haxe with Drupal.
 
-active the module menur and call url inside your drupal: /haxe/users/5
-
+active the module menur and call url inside your drupal: /haxe/users/5
 With an hook menu that call an instance of DrupalDispatcher
 
 
